@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "TunePauser",
+  "version": "1.0",
+
+  "description": "Pauses background audio when new audio starts, and resumes it after the new audio ends.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "js": ["pauser.js"]
+    }
+  ]
+
+}

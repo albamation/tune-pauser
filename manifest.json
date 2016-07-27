@@ -4,13 +4,16 @@
   "version": "1.0",
 
   "description": "Pauses background audio when new audio starts, and resumes it after the new audio ends.",
-
+  "homepage_url": "https://github.com/albamation/tune-pauser",
   "icons": {
     "48": "icons/pauser-48.png"
   },
 
+  "permissions": ["activeTab"],
+
   "content_scripts": [
     {
+      "matches": ["*://*.mozilla.org/*"],
       "js": ["pauser.js"]
     }
   ]

@@ -13,9 +13,13 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*"],
-      "js": ["pauser.js"]
+      "matches": ["<all_urls>"],
+      "js": ["pauser-content.js"]
     }
-  ]
+  ],
+
+  "background": {
+    "scripts": ["pauser-background.js"]
+  }
 
 }
